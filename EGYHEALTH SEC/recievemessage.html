@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EgyHealth | Message Received</title>
+    <!-- ربط مكتبة FontAwesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f1f5f9, #bfdbfe, #60a5fa, #1e3a8a);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .success-card {
+            width: 90%;
+            max-width: 500px;
+            padding: 40px;
+            border-radius: 20px;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            border: none;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        /* أنيميشن بسيط لظهور الكارت */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .icon-check {
+            font-size: 70px;
+            color: #10b981; /* لون أخضر مريح */
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1e3a8a;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #64748b;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .home-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background-color: #3b82f6;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .home-btn:hover {
+            background-color: #2563eb;
+            transform: scale(1.05);
+        }
+
+        .edit-link {
+            display: block;
+            margin-top: 20px;
+            color: #3b82f6;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .edit-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-card">
+        <i class="fas fa-check-circle icon-check"></i>
+        <h2>Done! Request Received</h2>
+        <p>Your appointment has been successfully booked. Our medical team will contact you shortly to confirm your visit.</p>
+        
+        <a href="index.html" class="home-btn">Go to Home Page</a>
+        
+        <a href="formhospital.html" class="edit-link">Need to edit your info? Click here</a>
+    </div>
+
+</body>
+</html>

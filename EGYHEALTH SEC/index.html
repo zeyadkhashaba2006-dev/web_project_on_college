@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EgyHealth</title>
+  <link rel="stylesheet" href="task1js.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>EgyHealth</h1>
+  </header>
+  <nav>
+    <span><a href="#about1">About</a></span>
+    <span><a href="#doctors1">Doctors</a></span>
+    <span><a href="#schedule1">Schedule</a></span>
+    <span><a href="#contact1">Contact</a></span>
+    <span><a href="#book1">Book</a></span>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+      <h2>Welcome to EgyHealth</h2>
+      <p>Your health is our priority. Get the best care with top doctors in Egypt.</p>
+  </section>
+
+  <!-- About Us -->
+  <section class="about" id="about1">
+    <h2>About Us</h2>
+    <p>EgyHealth is dedicated to provide world-class healthcare services with highly experienced doctors and modern facilities.</p>
+  </section>
+  <!-- Our Doctors -->
+  <section  class="doctors" id="doctors1">
+    <h2>Our Doctors</h2>
+    <div class="doctor-card">
+      <img src="WhatsApp Image 2025-08-18 at 18.27.30_bd78006c.jpg" class="imgage">
+      <h3>Dr. Mina Wadee</h3>
+      <p>Cardiologist - PortSaid University</p>
+      <p><strong>Experience:</strong> 15 years</p>
+      <p><strong>Available:</strong> Sun - Wed (10am - 4pm)</p>
+    </div>
+    <div class="doctor-card">
+      <img class="imgage" src="WhatsApp Image 2025-08-18 at 18.27.30_bd78006c.jpg">
+      <h3>Dr. Yehia Elghazl</h3>
+      <p>Dermatologist - Damietta University</p>
+      <p><strong>Experience:</strong> 12 years</p>
+      <p><strong>Available:</strong> Mon - Thu (12pm - 6pm)</p>
+    </div>
+    <div class="doctor-card">
+      <img class="imgage" src="WhatsApp Image 2025-08-18 at 18.27.30_bd78006c.jpg">
+      <h3>Dr. Mohamed Behery</h3>
+      <p>Neurologist - Damietta University</p>
+      <p><strong>Experience:</strong> 18 years</p>
+      <p><strong>Available:</strong> Sat - Tue (9am - 2pm)</p>
+    </div>
+    <div class="doctor-card">
+      <img class="imgage" src="WhatsApp Image 2025-08-18 at 18.27.30_bd78006c.jpg">
+      <h3>Dr. Yehia Elshenawy</h3>
+      <p>Pediatrician - Damietta University</p>
+      <p><strong>Experience:</strong> 10 years</p>
+      <p><strong>Available:</strong> Sun - Thu (11am - 5pm)</p>
+    </div>
+  </section>
+  <!-- Schedule Table -->
+  <section class="schedule" id="schedule1">
+    <h2>Doctors Schedule</h2>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Doctor</th>
+        <th>Specialization</th>
+        <th>Available Days</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td>Dr. Mina Wadee</td>
+        <td>Cardiologist</td>
+        <td>Sun - Wed</td>
+        <td>10am - 4pm</td>
+      </tr>
+      <tr>
+        <td>Dr. Yehia Elghazl</td>
+        <td>Dermatologist</td>
+        <td>Mon - Thu</td>
+        <td>12pm - 6pm</td>
+      </tr>
+      <tr>
+        <td>Dr. Mohamed Behery</td>
+        <td>Neurologist</td>
+        <td>Sat - Tue</td>
+        <td>9am - 2pm</td>
+      </tr>
+            <tr>
+        <td>Dr. Yehia Elshenawy</td>
+        <td>Pediatrician</td>
+        <td>Sun - Wed</td>
+        <td>10am - 4pm</td>
+      </tr>
+    </table>
+  </section>
+    <!-- Patients Reviews -->
+  <section class="reviews" id="reviews1">
+    <h2>Patients Reviews</h2>
+
+    <div class="doctor-card">
+      <p>"The doctors at EgyHealth are very professional and kind. The booking process was simple and fast."</p>
+      <strong>- Ahmed Khaled</strong>
+    </div>
+
+    <div class="doctor-card">
+      <p>"I had a great experience with Dr. Mina Wadee. He explained everything clearly and made me feel comfortable."</p>
+      <strong>- Sara Mohamed</strong>
+    </div>
+
+    <div class="doctor-card">
+      <p>"Clean facilities, punctual doctors, and excellent communication. Highly recommend!"</p>
+      <strong>- Omar Ali</strong>
+    </div>
+
+  </section>
+
+
+  <!-- Contact Us -->
+  <section class="contact" id="contact1">
+    <h2>Contact Us</h2>
+    <p>Email:<A href="mailto:zeyadkhashaba2006@gmail.com"> info@egyhealth.com</A></p>
+    <p>Phone: <a href="tel:01280905571">+20 1280 905 571</a></p>
+    <p>Address: Damietta, Egypt</p>
+
+    <!-- Contact Form -->
+    <form>
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Book Now -->
+  <section class="book" id="book1">
+    <h2>Book Your Appointment</h2>
+    <button class="btn" type="button"><a href="formhospital.html" target="_blank" class="booking">Book Now</a></button>
+  </section>
+
+  <!-- Progress Bar -->
+  <section class="progress">
+    <h2>Patients Satisfaction</h2>
+    <label for="satisfaction">Overall Rating:</label><br>
+    <progress id="satisfaction" value="90" max="100">90%</progress>
+  </section>
+    <!-- Progress Bar -->
+
+  <section class="tips" id="tips1">
+    <h2>Patients Tips</h2>
+    <ul>
+      <li> Get a medical check-up every 6 months to stay healthy.</li>
+      <li> Follow a balanced and healthy diet.</li>
+      <li> Drink at least 8 glasses of water daily.</li>
+      <li> Exercise regularly to boost your immunity.</li>
+      <li> Ensure 7-8 hours of quality sleep every day.</li>
+      <li> Avoid smoking to protect your heart and lungs.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EgyHealth. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

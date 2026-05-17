@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EgyHealth | Book Appointment</title>
+    <style>
+        /* إعدادات عامة */
+        body {
+            background: linear-gradient(135deg, #f1f5f9, #bfdbfe, #60a5fa, #1e3a8a);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background: #ffffff; /* خلفية بيضاء لراحة العين */
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            border: none; /* شيلنا البوردر السميك عشان المودرن لوك */
+        }
+
+        fieldset {
+            border: none; /* شيلنا البوردر التقليدي بتاع فيلد سيت */
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 20px;
+            background: #eff6ff;
+            color: #1e40af;
+            font-size: 28px;
+            border-radius: 50px;
+            margin-bottom: 30px;
+            border: 2px solid #3b82f6;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* تنسيق الحاوية لكل حقل */
+        .input-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column; /* الليبل فوق الانبوت */
+            gap: 8px;
+        }
+
+        label {
+            color: #1e3a8a;
+            font-weight: 600;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+
+        input, select, textarea {
+            border-radius: 10px;
+            border: 1.5px solid #cbd5e1;
+            padding: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 8px rgba(59, 130, 246, 0.2);
+            background-color: #f8fafc;
+        }
+
+        /* تنسيق الأزرار */
+        .button-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .btn {
+            flex: 1; /* الأزرار تاخد نفس العرض */
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            border: none;
+            color: white;
+        }
+
+        .submit {
+            background: #3b82f6;
+        }
+
+        .submit:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .reset {
+            background: #ef4444;
+        }
+
+        .reset:hover {
+            background-color: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        /* تحسين التيكست اريا */
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <form action="recievemessage.html">
+        <fieldset>
+            <legend>Patient Information</legend>
+
+            <div class="input-group">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" placeholder="Ex: Ahmed" id="firstname" required>
+            </div>
+
+            <div class="input-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" placeholder="Ex: Khaled" id="lastname" required>
+            </div>
+
+            <div class="input-group">
+                <label for="id">National ID</label>
+                <input type="text" name="nationalid" placeholder="14 Digits" id="id" pattern="\d{14}" title="Please enter 14 digits" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phonenum">Phone Number</label>
+                <input type="tel" name="phonenumber" placeholder="01xxxxxxxxx" id="phonenum" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" placeholder="name@example.com" id="email">
+            </div>
+
+            <div class="input-group">
+                <label for="birth">Date of Birth</label>
+                <input type="date" name="birthdate" id="birth" required>
+            </div>
+
+            <div class="input-group">
+                <label for="doctor">Select Specialization & Doctor</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="" disabled selected>Choose a doctor...</option>
+                    <optgroup label="Cardiologist Section">
+                        <option>Dr. Mina Wadee</option>
+                    </optgroup>
+                    <optgroup label="Dermatologist">
+                        <option>Dr. Yehia Elghazal</option>
+                    </optgroup>
+                    <optgroup label="Neurologist">
+                        <option>Dr. Mohamed Behery</option>
+                    </optgroup>
+                    <optgroup label="Pediatrician">
+                        <option>Dr. Yehia Elshenawy</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Describe Your Condition</label>
+                <textarea name="message" id="message" placeholder="Please describe what you feel..." rows="4"></textarea>
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="btn submit">Confirm Booking</button>
+                <button type="reset" class="btn reset">Clear Form</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
